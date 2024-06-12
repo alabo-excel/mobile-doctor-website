@@ -1,3 +1,4 @@
+import FooterNav from './components/FooterNav'
 import HeaderNav from './components/HeaderNav'
 
 function App() {
@@ -102,7 +103,7 @@ function App() {
         <div className='flex justify-between flex-wrap'>
           {services.map((single, index) => <div key={index} className='lg:w-[49%] mt-6 bg-[#E6F2FE] border border-[#E5F5BD] p-6 rounded-md'>
             <div className='flex'>
-              <img className='w-14 mr-4' src={`./images/icons/icon-${index+1}.png`} alt="" />
+              <img className='w-14 mr-4' src={`./images/icons/icon-${index + 1}.png`} alt="" />
               <p className='text-lg font-bold text-gray my-auto'>{single.title}</p>
             </div>
             <p className='text-sm mt-3'>{single.body}</p>
@@ -110,6 +111,23 @@ function App() {
 
         </div>
       </section>
+
+      <section className='bg-[#E6F2FE] relative lg:p-14 p-8 lg:mx-20 rounded-xl'>
+        <img src="./images/pattern-1.png" className='absolute w-28 top-0 left-0' alt="" />
+        <img src="./images/pattern-2.png" className='absolute bottom-0 w-24 right-0' alt="" />
+
+        <div className='lg:flex justify-between'>
+          <div className='lg:w-[70%] w-[80%] sm:text-center sm:mx-auto'>
+            <p className='text-2xl font-medium text-gray'>Our Mission</p>
+            <p className='text-sm'>At Mobile Doctor, our mission is empowering individuals to achieve optimal health through innovative
+              healthcare solutions</p>
+          </div>
+          <div className='sm:text-center sm:my-4'>
+            <button className='bg-gray rounded-md text-[#fff] px-6 text-sm p-3'>Book Appointment</button>
+          </div>
+        </div>
+      </section>
+
       <section className='lg:p-20 sm:p-4'>
         <div className='text-center lg:w-1/2 mx-auto'>
           <p className='text-3xl font-bold text-gray'>Careers</p>
@@ -163,6 +181,7 @@ function App() {
 
         </div>
       </section>
+      <FooterNav />
     </main>
   )
 }

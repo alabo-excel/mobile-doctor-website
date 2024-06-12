@@ -1,7 +1,32 @@
 import HeaderNav from './components/HeaderNav'
 
 function App() {
-
+  const services = [
+    {
+      title: "Affordability",
+      body: "At Mobile Doctor, we offer comprehensive medical consultations with experienced and compassionate healthcare professionals. Whether you need a routine check-up etc. without having to break the bank or worry"
+    },
+    {
+      title: "Access to top doctors and consultants",
+      body: "Access to top doctors and consultants from diverse field of medical practice from the comfort of your home/office 24/7. Without having to worry. We give qualified and trained specialist to our customer"
+    },
+    {
+      title: "Access to Laboratories",
+      body: "We offer convenient access to our state-of-the-art laboratories to meet your diagnostic needs. Our laboratories are equipped with advanced technology and skilled professionals who are committed to providing accurate and timely test results."
+    },
+    {
+      title: "Access to Pharmacist",
+      body: "We offer convenient access to our pharmacy, where you can fill prescriptions, purchase medications, and access a wide range of healthcare products. Our pharmacy is staffed by knowledgeable pharmacists."
+    },
+    {
+      title: "Access to Therapist",
+      body: "Our app provides seamless access to a variety of expert therapists, including specialized physiotherapists. Whether you are recovering from an injury, or seeking to improve your overall well-being."
+    },
+    {
+      title: "Specialty Care",
+      body: "Our team includes specialists in various fields of medicine, allowing us to offer specialized care for complex health issues. Whether you require the expertise of a cardiologist, family planning, medical outreach etc"
+    },
+  ]
   return (
     <main>
       <HeaderNav />
@@ -74,7 +99,69 @@ function App() {
           <p className='text-3xl font-bold text-gray'>Our Services</p>
           <p>Benefits / advantage of Mobile Doctor App and reasons to use </p>
         </div>
-        <div className='flex flex-wrap'></div>
+        <div className='flex justify-between flex-wrap'>
+          {services.map((single, index) => <div key={index} className='lg:w-[49%] mt-6 bg-[#E6F2FE] border border-[#E5F5BD] p-6 rounded-md'>
+            <div className='flex'>
+              <img className='w-14 mr-4' src={`./images/icons/icon-${index+1}.png`} alt="" />
+              <p className='text-lg font-bold text-gray my-auto'>{single.title}</p>
+            </div>
+            <p className='text-sm mt-3'>{single.body}</p>
+          </div>)}
+
+        </div>
+      </section>
+      <section className='lg:p-20 sm:p-4'>
+        <div className='text-center lg:w-1/2 mx-auto'>
+          <p className='text-3xl font-bold text-gray'>Careers</p>
+          <p>At Mobile Doctor, we believe in building a recruiting a diverse team dedicated to
+            delivering exceptional healthcare services. </p>
+        </div>
+        <div className='lg:flex sm:my-6 mt-10'>
+          <div className='lg:w-1/2 border-r-8 border-blue'>
+            <img src="./images/careers/img-1.png" alt="" />
+          </div>
+          <div className='lg:w-1/2 my-auto sm:my-4 lg:p-10'>
+            <p className='text-lg font-medium border-b w-[190px] text-gray border-gray'>Doctors/Consultants </p>
+            <p className='my-6'>Laboratories can register with us so that they can get direct referrals from
+              the App  both for in-shop attendance or home services where applicable.
+              We are looking for registered lab, lab practitioners, and licensed practical lab technicians who are dedicated to delivering high-quality patient care in a variety of clinical settings.</p>
+            <button className='bg-blue rounded-md p-3 px-8'>Apply</button>
+          </div>
+        </div>
+        <div className='lg:flex sm:my-6'>
+          <div className='lg:w-1/2 lg:order-1 lg:-ml-2 border-l-8 border-blue'>
+            <img src="./images/careers/img-2.png" alt="" />
+          </div>
+          <div className='lg:w-1/2 lg:order-0 my-auto lg:p-10 sm:my-4 lg:text-right'>
+            <p className='text-lg font-medium border-b w-[110px] lg:ml-auto text-gray border-gray'>Laboratories  </p>
+            <p className='my-6'>Laboratories can register with us so that they can get direct referrals from
+              the App  both for in-shop attendance or home services where applicable.
+              We are looking for registered lab, lab practitioners, and licensed practical lab technicians who are dedicated to delivering high-quality patient care in a variety of clinical settings.</p>
+            <button className='bg-blue rounded-md p-3 px-8'>Apply</button>
+          </div>
+
+        </div>
+        <div className='lg:flex sm:my-6'>
+          <div className='lg:w-1/2 border-r-8 border-blue'>
+            <img src="./images/careers/img-3.png" alt="" />
+          </div>
+          <div className='lg:w-1/2 my-auto sm:my-4 lg:p-10'>
+            <p className='text-lg font-medium border-b w-[120px] text-gray border-gray'>Pharmacists </p>
+            <p className='my-6'>Pharmacies can register with us for referrals and filling of prescriptions directly from the App both for in-shop attendance and home delivery where applicable. Pharmacists play a vital role in ensuring the safe and effective use of medications for our patients.</p>
+            <button className='bg-blue rounded-md p-3 px-8'>Apply</button>
+          </div>
+        </div>
+        <div className='lg:flex sm:my-6'>
+          <div className='lg:w-1/2 lg:order-1 lg:-ml-2 border-l-8 border-blue'>
+            <img src="./images/careers/img-4.png" alt="" />
+          </div>
+          <div className='lg:w-1/2 my-auto lg:order-0 sm:my-4 lg:p-10 lg:text-right'>
+            <p className='text-lg font-medium border-b w-[90px] lg:ml-auto text-gray border-gray'>Therapist  </p>
+            <p className='my-6'>Our therapy team plays a crucial role in supporting the mental and emotional well-being of our patients. We are looking for licensed therapists and counselors with expertise in areas such as psychology, counseling, social work, and behavioral health to join our team and provide individualized care to our patients.</p>
+            <button className='bg-blue rounded-md p-3 px-8'>Apply</button>
+          </div>
+
+        </div>
       </section>
     </main>
   )

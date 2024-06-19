@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='lg:p-20 sm:p-4'>
+      <section id='about' className='lg:p-20 sm:p-4'>
         <div className='lg:w-1/2'>
           <p className='text-3xl font-medium text-gray'>Introducing the Mobile Doctor.</p>
           <p className='text-sm'>First Star Consult, through our medical subsidiary Mobile Doctor, provides top-notch health management solutions.</p>
@@ -95,7 +95,7 @@ function App() {
         </div>
       </section>
 
-      <section className='lg:p-20 sm:p-4'>
+      <section id='services' className='lg:p-20 sm:p-4'>
         <div className='text-center'>
           <p className='text-3xl font-bold text-gray'>Our Services</p>
           <p>Benefits / advantage of Mobile Doctor App and reasons to use </p>
@@ -112,7 +112,7 @@ function App() {
         </div>
       </section>
 
-      <section className='bg-[#E6F2FE] relative lg:p-14 p-8 lg:mx-20 rounded-xl'>
+      <section id='mission' className='bg-[#E6F2FE] relative lg:p-14 p-8 lg:mx-20 rounded-xl'>
         <img src="./images/pattern-1.png" className='absolute w-28 top-0 left-0' alt="" />
         <img src="./images/pattern-2.png" className='absolute bottom-0 w-24 right-0' alt="" />
 
@@ -128,10 +128,10 @@ function App() {
         </div>
       </section>
 
-      <section className='lg:p-20 sm:p-4'>
+      <section id='careers' className='lg:p-20 sm:p-4'>
         <div className='text-center lg:w-1/2 mx-auto'>
           <p className='text-3xl font-bold text-gray'>Careers</p>
-          <p>At Mobile Doctor, we believe in building a recruiting a diverse team dedicated to
+          <p>At Mobile Doctor, we believe in building and recruiting a diverse team dedicated to
             delivering exceptional healthcare services. </p>
         </div>
         <div className='lg:flex sm:my-6 mt-10'>
@@ -140,9 +140,7 @@ function App() {
           </div>
           <div className='lg:w-1/2 my-auto sm:my-4 lg:p-10'>
             <p className='text-lg font-medium border-b w-[190px] text-gray border-gray'>Doctors/Consultants </p>
-            <p className='my-6'>Laboratories can register with us so that they can get direct referrals from
-              the App  both for in-shop attendance or home services where applicable.
-              We are looking for registered lab, lab practitioners, and licensed practical lab technicians who are dedicated to delivering high-quality patient care in a variety of clinical settings.</p>
+            <p className='my-6'>Doctors/consultants can register and open an account. Whether you specialize in primary care, internal medicine, or another specialty, we welcome dedicated doctors committed to excellence in patient care, where they consult patients at their spare time and earn money which will be credited to their wallet from where they can withdraw at will.</p>
             <button className='bg-blue rounded-md p-3 px-8'>Apply</button>
           </div>
         </div>

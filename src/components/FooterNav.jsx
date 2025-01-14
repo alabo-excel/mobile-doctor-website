@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 
 const FooterNav = () => {
   return (
@@ -10,8 +11,12 @@ const FooterNav = () => {
           <p>Home</p>
           <p>About</p>
           <p>Services</p>
-          <p>Careers</p>
-          <p>Mission</p>
+          {/* <p>Careers</p>
+          <p>Mission</p> */}
+          <Link to={'/privacy-policy'}>
+            <p>Privacy Policy</p>
+          </Link>
+
         </div>
         <div className="flex w-24 sm:mx-auto my-auto justify-between">
           <img className="w-6 h-6" src="/images/icons/facebook.png" alt="" />
@@ -26,10 +31,12 @@ const FooterNav = () => {
         </div>
         <div className="lg:w-[63%]">
           <div className="bg-[#3B3D4C] border text-[#fff] lg:flex justify-evenly w-full border-[#2C5446] p-2 rounded-md">
-            <div className="border sm:my-2 border-[#2C5446] flex p-2 rounded-md">
-              <img className="mx-2" src="/images/icons/mail.png" alt="" />
-              <p className="lg:text-sm text-xs my-auto">princewill.Orianwo@firststarconsults.online</p>
-            </div>
+            <a href="mailto:support@mobiledoctor.health">
+              <div className="border sm:my-2 border-[#2C5446] flex p-2 rounded-md">
+                <img className="mx-2" src="/images/icons/mail.png" alt="" />
+                <p className="lg:text-sm text-xs my-auto">support@mobiledoctor.health</p>
+              </div>
+            </a>
             <div className="border sm:my-2 border-[#2C5446] flex p-2 rounded-md">
               <img className="mx-2" src="/images/icons/call.png" alt="" />
               <p className="lg:text-sm text-xs my-auto">07010140789</p>
